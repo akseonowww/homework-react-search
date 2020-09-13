@@ -6,7 +6,7 @@ const Search = () => {
 
     const onInput = (e) => {
         setValue(e.target.value)
-        console.log(e)
+        console.log(value)
     }
 
     return (

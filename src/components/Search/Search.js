@@ -4,6 +4,11 @@ import classes from './Search.module.css'
 const Search = () => {
     const [value, setValue] = useState('')
 
+    const onInput = (text) => {
+        setValue(text.target.value)
+        console.log(value)
+    }
+
     return (
         <div>
             <input
@@ -11,10 +16,7 @@ const Search = () => {
                 type="text"
                 placeholder="Searching..."
                 value={value}
-                onChange={() => {
-                    setValue(value)
-                    console.log(value)
-                }}
+                onChange={onInput}
             />
         </div>
     )

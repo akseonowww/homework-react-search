@@ -1,144 +1,15 @@
-* {
-	-webkit-box-sizing: border-box;
-	box-sizing: border-box;
-}
-
-body {
-	background-color: #000000;
-	color: #bdbdbd;
-	font-family: sans-serif;
-}
-
-.main {
-	display: -webkit-box;
-	display: -ms-flexbox;
-	display: flex;
-	-webkit-box-align: center;
-	-ms-flex-align: center;
-	align-items: center;
-	-webkit-box-orient: vertical;
-	-webkit-box-direction: normal;
-	-ms-flex-direction: column;
-	flex-direction: column;
-}
-
-.data {
-	width: 60%;
-}
-
-.search {
-	width: 60%;
-	display: -webkit-box;
-	display: -ms-flexbox;
-	display: flex;
-	position: relative;
-	z-index: 1;
+/* body {
+	background-color: #111;
 }
 
 input {
-	background-color: #5d31d6;
-	padding: 10px 10px;
+	width: 50vw;
+	height: 50px;
+	margin: auto;
+	margin-top: 10%;
+	background-color: #eee;
 	font-size: 18px;
-	border: 0;
-	border: 2px solid transparent;
-	border-radius: 8px;
-	border: 2px solid transparent;
-	width: 100%;
-}
-
-input:focus {
-	outline: none;
-}
-
-.elastic {
-	margin: 0;
-	margin-top: -5px;
-	position: relative;
-	z-index: 2;
-	padding: 0;
-	border-radius: 0 0 12px 12px;
-	overflow: hidden;
-	background: #000;
-}
-
-.elastic li {
-	background: #111;
-	list-style: none;
-}
-
-.elastic li a {
-	padding: 8px 16px;
-	color: #afafaf;
-	text-decoration: none;
-	display: -webkit-box;
-	display: -ms-flexbox;
-	display: flex;
-	-webkit-box-align: center;
-	-ms-flex-align: center;
-	align-items: center;
-}
-
-.elastic li a .logo {
-	height: 26px;
-	width: 26px;
-	display: -webkit-box;
-	display: -ms-flexbox;
-	display: flex;
-	-webkit-box-pack: center;
-	-ms-flex-pack: center;
-	justify-content: center;
-	-webkit-box-align: center;
-	-ms-flex-align: center;
-	align-items: center;
-	padding: 3px;
-	overflow: hidden;
-	background-color: #ffffff;
-	border-radius: 100px;
-	margin-right: 10px;
-}
-
-.elastic li a .logo img {
-	width: 90%;
-}
-
-.elastic li a .text {
-	display: -webkit-box;
-	display: -ms-flexbox;
-	display: flex;
-	-webkit-box-orient: vertical;
-	-webkit-box-direction: normal;
-	-ms-flex-direction: column;
-	flex-direction: column;
-}
-
-.elastic li a .text .title {
-	font-size: 15px;
-}
-
-.elastic li a .text .link {
-	font-size: 12px;
-	color: #696969;
-}
-
-.elastic li a:hover .title {
-	color: #eeeeee;
-}
-
-.elastic li:nth-child(odd) {
-	background: #0a0a0a;
-}
-
-.elastic li:hover {
-	background: #252525;
-}
-
-.hide {
-	display: none;
-}
-
-mark {
-	background-color: #eccf4e;
-	border-radius: 2px;
-	color: #202020;
-	font-weight: 900;
-}
+	padding: 2px 30px;
+	border-radius: 16px;
+	border: none
+} */

@@ -1,10 +1,8 @@
 import React, { useState } from 'react'
 import classes from './Search.module.css'
 
-
 const Search = () => {
     const [value, setValue] = useState('')
-    
 
     return (
         <div>

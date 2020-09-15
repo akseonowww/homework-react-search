@@ -1,13 +1,17 @@
-import React, { useState } from 'react'
+import React, { useState, useCallback } from 'react'
 import classes from './Search.module.css'
 
 const Search = () => {
     const [value, setValue] = useState('')
+    console.log('render')
+    console.log(value)
 
-    const onInput = (e) => {
-        setValue(e.target.value)
-        console.log(value)
-    }
+    const onInput = useCallback(
+        (e) => {
+            setValue(e.target.value);
+        },
+        []
+    )
 
     return (
         <div>

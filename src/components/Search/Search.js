@@ -3,7 +3,7 @@ import React, { useState, useCallback } from 'react'
 const Search = () => {
     const [value, setValue] = useState('')
 
-    const onInput = useCallback(
+    const handleChange = useCallback(
         (e) => {
             setValue(e.target.value);
         },
@@ -16,7 +16,7 @@ const Search = () => {
                 type="text"
                 placeholder="Searching..."
                 value={value}
-                onChange={onInput}
+                onChange={handleChange}
             />
         </div>
     )

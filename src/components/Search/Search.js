@@ -14,7 +14,7 @@ const Search = () => {
         () => {
             console.log(value)
         },
-        []
+        [value]
     )
 
     return (

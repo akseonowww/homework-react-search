@@ -10,6 +10,10 @@ const Search = () => {
         []
     )
 
+    const handleClick = () => {
+        console.log(value)
+    }
+
     return (
         <div>
             <input
@@ -18,6 +22,7 @@ const Search = () => {
                 value={value}
                 onChange={handleChange}
             />
+            <button onClick={handleClick}>Поиск</button>
         </div>
     )
 }

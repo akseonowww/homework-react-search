@@ -10,9 +10,12 @@ const Search = () => {
         []
     )
 
-    const handleClick = () => {
-        console.log(value)
-    }
+    const handleClick = useCallback(
+        () => {
+            console.log(value)
+        },
+        []
+    )
 
     return (
         <div>

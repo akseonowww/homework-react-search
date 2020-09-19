@@ -13,8 +13,8 @@ const Search = () => {
 
     const handleClick = useCallback(
         () => {
-             = fetch(url)
-            .then( => .json())
+            fetch(url)
+            .then(responsev => responsev.json())
             .then(commits => console.log(commits.subject));
             console.log(value)
             // console.log()

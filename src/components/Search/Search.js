@@ -10,14 +10,14 @@ const Search = () => {
         },
         []
     )
-    
+
     const handleClick = useCallback(
         () => {
-            let promise = fetch(url)
-            promise.then(promise => promise.json())
-            promise.then(commits => console.log(commits.subject));
+             = fetch(url)
+            .then( => .json())
+            .then(commits => console.log(commits.subject));
             console.log(value)
-            // console.log(promise)
+            // console.log()
         },
         [value, url]
     )

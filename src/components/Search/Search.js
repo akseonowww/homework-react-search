@@ -13,6 +13,7 @@ const Search = () => {
     const handleClick = useCallback(
         () => {
             let url = `https://sdamgia-homework-backend.herokuapp.com/api/search?query=${value}`
+
             fetch(url)
                 .then(response => response.json())
                 .then(data => console.log(data.subject));

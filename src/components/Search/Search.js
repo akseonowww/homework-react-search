@@ -2,7 +2,6 @@ import React, { useState, useCallback } from 'react'
 
 const Search = () => {
     const [value, setValue] = useState('')
-    let url = `https://sdamgia-homework-backend.herokuapp.com/api/search?query=${value}`
 
     const handleChange = useCallback(
         (e) => {
@@ -13,13 +12,14 @@ const Search = () => {
 
     const handleClick = useCallback(
         () => {
+            let url = `https://sdamgia-homework-backend.herokuapp.com/api/search?query=${value}`
             fetch(url)
-            .then(response => response.json())
-            .then(data => console.log(data.subject));
+                .then(response => response.json())
+                .then(data => console.log(data.subject));
             console.log(value)
             // console.log()
         },
-        [value, url]
+        [value]
     )
 
     return (

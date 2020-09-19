@@ -17,7 +17,6 @@ const Search = () => {
                 .then(response => response.json())
                 .then(data => console.log(data.subject));
             console.log(value)
-            // console.log()
         },
         [value]
     )

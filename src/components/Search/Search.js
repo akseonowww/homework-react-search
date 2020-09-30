@@ -14,8 +14,8 @@ const Search = () => {
     () => {
       async function fetchData() {
         const url = `https://sdamgia-homework-backend.herokuapp.com/api/search?query=${value}`
-        let response = await fetch(url)
-        let data = await response.json()
+        const response = await fetch(url)
+        const data = await response.json()
         
         return data.subject
       }

@@ -16,10 +16,16 @@ const Search = () => {
         const url = `https://sdamgia-homework-backend.herokuapp.com/api/search?query=${value}`
         const response = await fetch(url)
         const data = await response.json()
-        
+        // console.log(data.subject)
+
         return data.subject
       }
-      fetchData()
+
+      let data = fetchData()
+      let { name, title } = data
+      // alert(name + ' ' + title)
+      console.log(name + ' ' + title)
+      console.log(data)
 
     },
     [value]

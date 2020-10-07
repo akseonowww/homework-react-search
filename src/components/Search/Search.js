@@ -21,11 +21,17 @@ const Search = () => {
         return data.subject
       }
 
-      let data = fetchData()
-      let { name, title } = data
+      async function alertData() {
+        const response = await fetchData()
+        const { name, title } = response
+        alert(name + ' - ' + title)
+      }
+
+      alertData()
+
       // alert(name + ' ' + title)
-      console.log(name + ' ' + title)
-      console.log(data)
+      // console.log(name + ' ' + title)
+      // console.log(data)
 
     },
     [value]

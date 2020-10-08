@@ -12,7 +12,7 @@ const Search = () => {
 
   const handleClick = useCallback(
     () => {
-      async function fetchData() {
+      const fetchData = async () => {
         const url = `https://sdamgia-homework-backend.herokuapp.com/api/search?query=${value}`
         const response = await fetch(url)
         const data = await response.json()
@@ -21,12 +21,9 @@ const Search = () => {
       }
 
       async function alertData() {
-        const response = await fetchData()
-        const { name, title } = response
-        alert(name + ' - ' + title)
+        fetchData()
+          .then((text) => alert(`${text.name} - ${text.title}`))
       }
-
-      alertData()
 
     },
     [value]

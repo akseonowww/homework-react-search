@@ -20,10 +20,9 @@ const Search = () => {
         return data.subject
       }
 
-      async function alertData() {
-        fetchData()
-          .then((text) => alert(`${text.name} - ${text.title}`))
-      }
+      fetchData()
+        .then((text) => alert(`${text.name} - ${text.title}`))
+
 
     },
     [value]
